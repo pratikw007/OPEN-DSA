@@ -1,16 +1,16 @@
 public class CeilingOfNumber {
 
-    static int CeilingOfNumber(int[] arr,int target){
+    static int CeilingOfNumber(int[] letters,int target){
         int start = 0;
-        int end = arr.length - 1; //array ki length se minus
+        int end = letters.length - 1; //array ki length se minus
 
         while (start <= end) {
             
             int mid = start + (end -start) / 2;
 
-            if(target < arr[mid]){
+            if(target < letters[mid]){
                 end = mid -1;
-            }else if(target > arr[mid]){
+            }else if(target > letters[mid]){
                 start = mid + 1;
             } else {
                 //ans found 
@@ -21,9 +21,12 @@ public class CeilingOfNumber {
     }
 
     public static void main(String[] args) {
-        int[] arr = {-18,-12,-4,0,2,3,4,15,16,18,22,45,89};
-        int target = 22;
-        int ans = CeilingOfNumber(arr, target);
+        int[] letters = {'c','f','j'};
+        int target ='a';
+        int ans = CeilingOfNumber(letters, target);
         System.out.println(ans);
     }
 }
+
+
+// 01.03

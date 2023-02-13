@@ -16,3 +16,4 @@ public class Solid_rhombus {
     Rhombus( 5);
     }
 }
+
