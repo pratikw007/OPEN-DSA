@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 public class BinSearch {
     //In Assending order every single element is > = the privious element
     public static void main(String[] args) {

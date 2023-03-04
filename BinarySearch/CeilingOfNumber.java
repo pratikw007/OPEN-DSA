@@ -24,7 +24,7 @@ public class CeilingOfNumber {
               // int mid=(start+end)/2; //might be possible that (start + end)
               // exceeds the range of integers     java
       
-              int mid = start + (start + end)/2;
+              int mid = start + (end - start)/2;
       
       
               if(target < arr[mid]){ // the element should be L.H.S
